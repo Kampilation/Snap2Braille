@@ -16,4 +16,4 @@ Braille Conversion: Displays the Braille equivalent of the extracted text using 
 
 Feel free to reuse the code for your custom development and in your projects.
 
-You can see a live demo at: https://htmlpreview.github.io/?https://github.com/Kampilation/Snap2Braille/blob/6206be095c94f0c85b1d99e02c97e9886a8db5d6/scan2braille.html
+You can see a live demo at: https://kampilation.github.io/Snap2Braille/snap2braille.html
