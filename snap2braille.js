@@ -84,3 +84,19 @@ document.getElementById('cameraInput').addEventListener('change', function(event
         });
     });
 });
+
+// Text-to-Speech Function
+function speakText(text) {
+    const synth = window.speechSynthesis;
+    if (synth.speaking) {
+        console.error('SpeechSynthesis is already speaking.');
+        return;
+    }
+    const utterance = new SpeechSynthesisUtterance(text);
+    synth.speak(utterance);
+}
+
+document.getElementById('speakTextButton').addEventListener('click', function() {
+    const text = document.getElementById('outputText').innerText;
+    speakText(text);
+});
