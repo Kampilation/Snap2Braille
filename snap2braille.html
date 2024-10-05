@@ -26,9 +26,9 @@
             padding: 30px;
             max-width: 600px;
             border-radius: 10px;
-            margin-left: 15px;
-            margin-right:15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 15px;
+            margin-right: 15px;
             text-align: center;
         }
 
@@ -91,6 +91,21 @@
             margin-bottom: 10px;
         }
 
+        button {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
         footer {
             margin-top: 20px;
             font-size: 12px;
@@ -104,7 +119,7 @@
             Scan 2 Braille - Kampilation
         </div>
         
-        <h1>Convert Photo to Text to Braille</h1>
+        <h1>Convert Photo to Text to Speech to Braille</h1>
         <p>Select an image or Capture photo to convert to Braille:</p>
         <input type="file" accept="image/*" id="cameraInput">
         <div class="loadingMessage" id="loadingMessage">Processing image... Please wait.</div>
@@ -113,6 +128,7 @@
             <div>
                 <span class="result-label">Extracted Text:</span>
                 <div class="result-box" id="outputText">No text yet.</div>
+                <button id="speakTextButton">Speak Extracted Text</button>
             </div>
             <div>
                 <span class="result-label">Braille Conversion:</span>
@@ -124,6 +140,6 @@
             &copy;2024 Kampilation
         </footer>
     </div>
+
     <script src="snap2braille.js"></script>
 </body>
-</html>
